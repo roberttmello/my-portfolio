@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>Carlos Robert - Desenvolvedor Web Frontend</title>
   </head>
   <body>
+
+    <!-- Desktop Nav -->>
     <nav id="desktopNav">
       <div class="logo">Carlos Robert</div>
       <div>
@@ -19,6 +21,27 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger Nav -->>
+    <nav id="hamburgerNav">
+      <div class="logo">Carlos Robert</div>
+      <div class="hamburgerMenu">
+        <div class="hamburgerIcon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menuLinks">
+          <li><a href="#sobre" onclick="toggleMenu()">sobre</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">experiência</a></li>
+          <li><a href="#projetos" onclick="toggleMenu()">projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">contato</a></li>
+        </div>
+      </div>
+    </nav>
+
+    
+
 
 
     <script src="script.js"></script>
